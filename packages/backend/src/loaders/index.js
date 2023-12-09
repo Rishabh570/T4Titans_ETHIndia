@@ -5,7 +5,6 @@ module.exports = {
   run: () => {
     return new Promise(async (resolve) => {
       const contract = await web3.run();
-      console.log('web3 loader result = ', ress);
       // const service = serviceLoader.init({  });
       // other dependencies init goes here...
 
