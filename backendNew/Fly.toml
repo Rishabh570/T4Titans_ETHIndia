@@ -1,0 +1,13 @@
+app = "prosper"
+
+[build]
+  image = "node:18"
+
+[[services]]
+  internal_port = 3000
+  protocol = "tcp"
+
+[env]
+  NODE_ENV = "production"
+  GITHUB_ACCESS_TOKEN="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"
+  INFURA_API_KEY="240f366476c54222b6e0942c3fbcb1f9"
