@@ -2,22 +2,23 @@ const express = require('express');
 
 const loaders = require('./loaders');
 const { apiRoutes } = require('./routes');
+const { HTTP_STATUS_CODES } = require('../constants');
 
 const app = express();
 
 loaders
   .run()
-  .then(({ }) => {
+  .then(({ contract }) => {
     app.use(express.urlencoded({ limit: '5mb', extended: true }));
     app.use(express.json({ limit: '5mb' }));
 
     // Health check route
     app.get('/', (req, res) => {
-      res.json({ status: true });
+      res.status(HTTP_STATUS_CODES.SUCCESS).json({ status: true });
     });
 
     // Main app route(s)
-    app.use('/api/v1', apiRoutes({ }));
+    app.use('/api/v1', apiRoutes({ contract }));
 
     // Error handlers
     process.on('uncaughtException', (err) => {

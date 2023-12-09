@@ -4,7 +4,7 @@ const { HTTP_STATUS_CODES } = require('../../constants');
 
 const client = octonode.client("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");
 
-module.exports = ({  }) => {
+module.exports = ({ contract }) => {
   async function processWebhook(req, res) {
     try {  
       // await service.itemService.create();

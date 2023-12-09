@@ -44,13 +44,14 @@ const contractABI = [
   }
 ];
 
-const contract = new ethers.Contract(contractAddress, contractABI, provider);
-console.log('contract: ', contract);
 
 module.exports = {
   run: async () => {
-    const result = await contract.retrieve();
-    console.log('Result of someFunction:', result);
-    return result;
+    const contract = new ethers.Contract(contractAddress, contractABI, provider);
+    console.log('contract: ', contract);
+    return contract;
+    // const result = await contract.retrieve();
+    // console.log('Result of someFunction:', result);
+    // return result;
   }
 }
