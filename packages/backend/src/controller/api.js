@@ -10,6 +10,11 @@ module.exports = ({  }) => {
       // await service.itemService.create();
       console.log('processing webhook...');
       console.log('processing webhook finished!');
+      console.log('req: ', req);
+
+      // TODO: Update the commit activity on chain
+      // Update the corresponding mapping in smart contract
+
   
       // Return the newly generated item
       return res.status(HTTP_STATUS_CODES.SUCCESS).json({
