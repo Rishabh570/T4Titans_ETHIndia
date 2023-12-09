@@ -13,7 +13,7 @@ loaders
     app.use(express.json({ limit: '5mb' }));
 
     // Health check route
-    app.get('/', (req, res) => {
+    app.get('/health', (req, res) => {
       res.status(HTTP_STATUS_CODES.SUCCESS).json({ status: true });
     });
 
