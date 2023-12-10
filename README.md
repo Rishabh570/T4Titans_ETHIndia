@@ -67,14 +67,24 @@ Run smart contract test with `yarn hardhat:test`
 - Edit your frontend in `packages/nextjs/pages`
 - Edit your deployment scripts in `packages/hardhat/deploy`
 
-## Documentation
 
-Visit our [docs](https://docs.scaffoldeth.io) to learn how to start building with Scaffold-ETH 2.
+# Goals
 
-To know more about its features, check out our [website](https://scaffoldeth.io).
+- There are around 180,000 open source projects as of today and close to 1400 unique licenses. The world's biggest tech orgs are standing on the shoulders of so many OSS projects.
+- Sadly, these volunteers are not being compensated for their hard work.
 
-## Contributing to Scaffold-ETH 2
+# Solution
 
-We welcome contributions to Scaffold-ETH 2!
+We help move open source move forward by incentivizing good volunteers. People can stake ethers and support the work they care about. At the same time, it becomes feasible for the authors/contributors to contribute outside their working hours.
 
-Please see [CONTRIBUTING.MD](https://github.com/scaffold-eth/scaffold-eth-2/blob/main/CONTRIBUTING.md) for more information and guidelines for contributing to Scaffold-ETH 2.
+# Tech stack
+
+Prosper uses Scroll, Solidity, React.js, Typescript, Hardhat toolchain, Ethers.js, Web3auth, and Push protocol.
+
+# Details
+
+Deployed contract address: 0x6A9391C87Cd31e2BFa8b6B1F376F9aE7327421c9
+
+Block Explorer link: https://sepolia.scrollscan.com/tx/0xb905d8d790774c1c696ed5ccc42eb7cd7928215842574b6f7aabb7902623ffac
+
+Txn id : 0xb905d8d790774c1c696ed5ccc42eb7cd7928215842574b6f7aabb7902623ffac
